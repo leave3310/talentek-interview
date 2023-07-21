@@ -1,0 +1,15 @@
+@import './reset';
+$md: 768px;
+$lg: 1024px;
+$sm: 576px;
+body{
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 360px;
+}
+@mixin screen($breakPoint) {
+  @media (max-width: $breakPoint) {
+    @content;
+  }
+}
